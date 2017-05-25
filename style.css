@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.graph {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.bars {
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  height: 0;
+  transition: height 1s ease;
+}
+
+.bar:nth-of-type(odd) {
+  background-color: #2F9296;
+}
+
+.bar:nth-of-type(even) {
+  background-color: #46B7B9;
+}
+
+.bar span {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 10px;
+}
+
+form {
+  margin-top: 5px;
+}
+
+input {
+  background-color: white;
+  font-family: 'Karla', sans-serif;
+  border: 1px solid black;
+  font-size: 16px;
+  width: calc(30% - 5px);
+  float: left;
+  height: 26px;
+  padding-left: 5px;
+}
+
+button {
+  width: 70%;
+  background-color: white;
+  font-family: 'Karla', sans-serif;
+  border: 1px solid black;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+input:focus, button:focus {
+  outline: none !important;
+}
